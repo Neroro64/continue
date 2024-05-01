@@ -1,4 +1,4 @@
-import { Chunk, Reranker } from "../..";
+import { Chunk, Reranker } from "../../index.js";
 
 export class LocalReranker implements Reranker {
   name = "local";

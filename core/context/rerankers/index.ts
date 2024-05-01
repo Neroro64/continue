@@ -5,6 +5,7 @@ import { FreeTrialReranker } from "./freeTrial.js";
 import { LLMReranker } from "./llm.js";
 import { HuggingFaceTEIReranker } from "./tei.js";
 import { VoyageReranker } from "./voyage.js";
+import { LocalReranker } from "./localReranker.js";
 
 export const AllRerankers: { [key in RerankerName]: any } = {
   cohere: CohereReranker,
@@ -13,4 +14,5 @@ export const AllRerankers: { [key in RerankerName]: any } = {
   "free-trial": FreeTrialReranker,
   "huggingface-tei": HuggingFaceTEIReranker,
   "continue-proxy": ContinueProxyReranker,
+  "localReranker": LocalReranker
 };
