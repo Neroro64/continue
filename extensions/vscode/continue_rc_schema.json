@@ -2336,7 +2336,7 @@
                 "voyage",
                 "llm",
                 "free-trial",
-                "huggingface-tei"
+                "localReranker"
               ]
             },
             "params": {
@@ -2352,7 +2352,8 @@
                 "properties": {
                   "name": {
                     "enum": [
-                      "cohere"
+                      "cohere",
+                      "localReranker"
                     ]
                   }
                 },
