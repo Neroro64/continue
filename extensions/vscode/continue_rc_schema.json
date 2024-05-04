@@ -1990,7 +1990,8 @@
                 "cohere",
                 "voyage",
                 "llm",
-                "free-trial"
+                "free-trial",
+                "localReranker"
               ]
             },
             "params": {
@@ -2006,7 +2007,8 @@
                 "properties": {
                   "name": {
                     "enum": [
-                      "cohere"
+                      "cohere",
+                      "localReranker"
                     ]
                   }
                 },
