@@ -134,6 +134,7 @@ notes.txt
 cached_embeddings.pkl
 .ruff_cache
 codeql
+bun.lockb
 
 **/.continue
 .DS_Store
