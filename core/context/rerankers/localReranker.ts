@@ -1,7 +1,7 @@
 import { Chunk, Reranker } from "../..";
 
 export class LocalReranker implements Reranker {
-  name = "local";
+  name = "localReranker";
 
   constructor(
     private readonly params: {
