@@ -25,6 +25,7 @@ export async function retrieveContextItemsFromEmbeddings(
   }
 
   const nFinal = options?.nFinal || RETRIEVAL_PARAMS.nFinal;
+  const rerankThreshold = options?.rerankThreshold || RETRIEVAL_PARAMS.rerankThreshold;
   const useReranking = extras.reranker !== undefined;
   const nRetrieve =
     useReranking === false
@@ -114,10 +115,10 @@ export async function retrieveContextItemsFromEmbeddings(
 
     // Filter out low-scoring results
     results = results.filter(
-      (_, i) => scores[i] >= RETRIEVAL_PARAMS.rerankThreshold,
+      (_, i) => scores[i] >= rerankThreshold,
     );
     scores = scores.filter(
-      (score) => score >= RETRIEVAL_PARAMS.rerankThreshold,
+      (score) => score >= rerankThreshold,
     );
 
     results.sort(

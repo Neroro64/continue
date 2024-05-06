@@ -1523,6 +1523,12 @@
                     "default": 10,
                     "type": "integer"
                   },
+                  "rerankThreshold": {
+                    "title": "Rerank Threshold",
+                    "description": "Threashold for filtering out low rerank scored results.",
+                    "default": 0.3,
+                    "type": "number"
+                  },
                   "useReranking": {
                     "title": "Use Reranking",
                     "description": "Whether to use re-ranking, which will allow initial selection of nRetrieve results, then will use an LLM to select the top nFinal results. Disabling re-ranking will give faster, but less accurate, results.",
